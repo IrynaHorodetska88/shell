@@ -14,7 +14,7 @@ set -x
 # 3. Create 5 text files in dir2 named file1.txt, file2.txt, file3.txt, file4.txt, and file5.txt
  touch dir2/file{1..5}.txt
 # 4. Append the words "Hello world" to dir2/file3.txt
- echo "Hello world" >> file3.txt
+ echo "Hello world" >> dir2/file3.txt
 # 5. Verify that file3 contains the words "hello world" by printing the contents of the file in the terminal
   cat dir2/file3.txt
 # 6. Delete file4
