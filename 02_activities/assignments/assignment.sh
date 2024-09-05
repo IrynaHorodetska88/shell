@@ -12,7 +12,8 @@ set -x
 # 2. List the contents of the parent directory to verify the presence of the 5 directories
   ls 
 # 3. Create 5 text files in dir2 named file1.txt, file2.txt, file3.txt, file4.txt, and file5.txt
-  dir2/file1.txt dir2/file2.txt dir2/file3.txt dir2/file4.txt dir2/file5.txt
+  cd dir2
+  touch file1.txt file2.txt file3.txt file4.txt file5.txt
 # 4. Append the words "Hello world" to dir2/file3.txt
  echo "Hello world" >> file3.txt
 # 5. Verify that file3 contains the words "hello world" by printing the contents of the file in the terminal
